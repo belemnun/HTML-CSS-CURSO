@@ -28,13 +28,29 @@ body{
 
 .contenedor {
     width: 120rem;
-    margin: 0 auto 0 auto;
+    margin: 0 auto;
 }
 .nav-bg{
     background-color: var(--morado);
 }
+.navegacion-principal{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
 
-.navegacion-principal a{
-    background-color: var(--naranja);
+.navegacion-principal a {
+    background-color: var(--morado);
+    color: var(--Blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+}
+
+.navegacion-principal a:hover {
+    background-color: var(--Oscuro);
+    color: var(--morado);
 
 }
+
