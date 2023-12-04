@@ -20,11 +20,23 @@ body{
     font-size: 16px; /* 1 rem = 10px */
     font-family: 'Roboto Condensed', sans-serif;
 }
+ h1 {
+    font-size: 3.8rem;
+ }
 
+ h2 {
+    font-size: 2.8rem;
+ }
+
+ h3{
+    font-size: 1.8rem;
+ }
+ h1,h2,h3 {
+    text-align: center;
+ }
 .titulo {
     color: var(--morado);
     text-align: center;
-    font-size: 3.8rem;
     font-family: 'Roboto Condensed', sans-serif;
 }
 .titulo span{ 
@@ -74,5 +86,34 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     height: 410px;
-    padding: 20px;
+    position: relative;
+}
+
+.contenido-hero{
+    position: absolute;
+    background-color: rgb( 0, 0, 0, .5); /** Anterior **/
+    background-color: rgb(0 0 0 / 60%);
+    width: 100%;
+    height: 100%;
+    
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  /* Centrar columnas */
+}
+
+.contenido-hero h2,
+.contenido-hero p {
+    color: var(--Blanco);
+}
+/*
+.ubicacion {
+    display: flex;
+    align-items: center; /* Puedes ajustar esto según sea necesario */
+}
+/*
+.ubicacion svg {
+    margin-right: 10px; /* Ajusta el valor según sea necesario */
+    order: -1; /* Esto cambia el orden del elemento en el contenedor flex a -1, colocándolo al principio */
 }
