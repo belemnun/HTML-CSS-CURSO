@@ -47,6 +47,23 @@ body{
     width: 120rem;
     margin: 0 auto;
 }
+
+.boton {
+    background-color: var(--naranja);
+    color: var(--Blanco);
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase; /* Todas las letras en mayusculas o minusculas */
+    font-weight: bold; /* Texto en negritas */
+    border-radius: .5rem; /* Bordes redondos */
+
+}
+
+@media (min-width  ) {
+    
+}
 .nav-bg{
     background-color: var(--morado);
 }
@@ -107,13 +124,14 @@ body{
 .contenido-hero p {
     color: var(--Blanco);
 }
-/*
+
 .ubicacion {
     display: flex;
-    align-items: center; /* Puedes ajustar esto según sea necesario */
+    align-items: center; 
 }
-/*
+
 .ubicacion svg {
     margin-right: 10px; /* Ajusta el valor según sea necesario */
     order: -1; /* Esto cambia el orden del elemento en el contenedor flex a -1, colocándolo al principio */
 }
+
