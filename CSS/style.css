@@ -5,7 +5,7 @@
     --Oscuro: #212121;
     --Azul: #0097a7;
     --Gris: #757575;
-    
+    --Degradado: #D7CDCB;
 }
 
 html{
@@ -19,7 +19,9 @@ html{
 body{
     font-size: 16px; /* 1 rem = 10px */
     font-family: 'Roboto Condensed', sans-serif;
+    background-image: linear-gradient(to top, var(--Degradado) 0%, var(--Blanco) 20%);
 }
+
  h1 {
     font-size: 3.8rem;
  }
@@ -48,7 +50,7 @@ body{
     margin: 0 auto;
 }
 
-.boton {
+ .boton {
     background-color: var(--naranja);
     color: var(--Blanco);
     padding: 1rem 3rem;
@@ -58,12 +60,17 @@ body{
     text-transform: uppercase; /* Todas las letras en mayusculas o minusculas */
     font-weight: bold; /* Texto en negritas */
     border-radius: .5rem; /* Bordes redondos */
+    width: 90%;
+    text-align: center;
 
+} 
+
+@media (min-width: 768px) {
+    .boton {
+        width: auto;
+    }
 }
 
-@media (min-width  ) {
-    
-}
 .nav-bg{
     background-color: var(--morado);
 }
@@ -134,4 +141,5 @@ body{
     margin-right: 10px; /* Ajusta el valor según sea necesario */
     order: -1; /* Esto cambia el orden del elemento en el contenedor flex a -1, colocándolo al principio */
 }
+
 
