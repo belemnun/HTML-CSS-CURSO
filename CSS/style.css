@@ -1,4 +1,4 @@
-:root {
+ :root {
     --morado: #DC8DFF;
     --naranja: #FFC300;
     --Blanco: #FFFFFF;
@@ -41,8 +41,8 @@ body{
     text-align: center;
     font-family: 'Roboto Condensed', sans-serif;
 }
-.titulo span{ 
-   font-size: 2rem; 
+.titulo span{
+   font-size: 2rem;
 }
 
 .contenedor {
@@ -63,13 +63,22 @@ body{
     width: 90%;
     text-align: center;
 
-} 
+}
 
 @media (min-width: 768px) {
     .boton {
         width: auto;
     }
 }
+
+.sombra {
+    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.54);
+    background-color: var(--Blanco);
+    padding: 2rem;
+    border-radius: 1rem;  /* Bordes Redondos */
+}
+
+
 
 .nav-bg{
     background-color: var(--morado);
@@ -101,8 +110,11 @@ body{
 
 }
 
-@media (min-witdh: 480px ) {
-    
+@media (min-witdh: 768px) {
+    .boton {
+        width: auto;
+    }
+
 }
 
 .hero {
@@ -111,6 +123,8 @@ body{
     background-size: cover;
     height: 410px;
     position: relative;
+    margin-bottom: 2rem; /* (Separar formularios-Cuadros */
+
 }
 
 .contenido-hero{
@@ -119,8 +133,8 @@ body{
     background-color: rgb(0 0 0 / 60%);
     width: 100%;
     height: 100%;
-    
-    
+
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -134,7 +148,7 @@ body{
 
 .ubicacion {
     display: flex;
-    align-items: center; 
+    align-items: center;
 }
 
 .ubicacion svg {
