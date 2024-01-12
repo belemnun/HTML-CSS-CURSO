@@ -166,15 +166,50 @@ body{
     
 }
 
-.servicio{
-
+.servicio {
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 .servicio h3 {
+color: var(--Azul);
+font-weight: 400;
+
+}
+
+.servicio p {
+    line-height: 2;
 
 }
 .servicio .iconos {
     height: 15rem;
     width: 15rem;
     background-color: var(--morado);
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Contacto */
+.formulario {
+background-color: var(--Gris);
+ width: min( 60rem, 100% );   /*Utilizar el valor más pequeño*/
+ margin: 0 auto;
+ padding: 2rem;
+ border-radius: 1rem;
+
+} 
+.formulario fieldset {
+    border: none;
+}
+
+.formulario legend{
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--naranja);
 }
 
