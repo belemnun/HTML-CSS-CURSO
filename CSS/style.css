@@ -1,4 +1,4 @@
- :root {
+:root {
     --morado: #DC8DFF;
     --naranja: #FFC300;
     --Blanco: #FFFFFF;
@@ -108,13 +108,6 @@ body{
 .navegacion-principal{
     display: flex;
     flex-direction: column;
-
-}
-@media (min-width: 768px) {
-    .navegacion-principal {
-        flex-direction: row;
-        justify-content: space-between;
-    }
 }
 
 .navegacion-principal a {
@@ -125,6 +118,25 @@ body{
     font-weight: 700;
     padding: 1rem;
 }
+
+@media (min-width: 768px) {
+    .navegacion-principal {
+        flex-direction: row;
+        justify-content: center;
+        gap: 10rem;
+    }
+
+    /* .navegacion-principal a { */
+        /* margin: 0 5rem; */
+
+        /* margin-top: 0;
+        margin-bottom: 0;
+        margin-right: 5rem;
+        margin-left: 5rem; */
+    /* } */
+
+}
+
 
 .navegacion-principal a:hover {
     background-color: var(--Oscuro);
@@ -235,8 +247,11 @@ background-color: var(--Gris);
     color: var(--naranja);
 }
 
-.contenedor-campo
+.contenedor-campo{
+
 }
+
+
 
 .campo {
     margin-bottom: 1rem;
