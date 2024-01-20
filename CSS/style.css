@@ -7,11 +7,21 @@
     --Gris: #757575;
     --Degradado: #D7CDCB;
 }
-
+ /* Globales */
 html{
     font-size: 62.5%;
     box-sizing: border-box;
+    scroll-snap-type: y mandatory;
 }
+
+/* Scroll Snap */
+.servicios,
+.navegacion-principal,
+.formulario {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}    
+
 *, *:before, *:after {
     box-sizing: inherit;
   }
@@ -288,3 +298,11 @@ background-color: var(--Gris);
 .campo textarea{
     height: 20rem;
 }
+
+
+/** Footer **/
+
+.footer{ 
+    text-align: center;
+}
+
